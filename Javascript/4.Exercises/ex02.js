@@ -8,4 +8,15 @@ Crie uma função que recebe os comprimentos dos três lados de um triângulo e 
 ao tamanho de seus lados. (Neste exemplo deve-se abstrair as condições matemáticas de existência de um
 triângulo).*/ 
 
-console.log("Testando...")
+function triangulo(x, y, z) {
+    if(x==y && y==z) {
+        console.log("Triângulo Equilátero")
+    } else 
+        if(x==y || y==z || z==x) {
+            console.log("Triângulo Isósceles")
+        } else {
+            console.log("Triângulo Escaleno")
+        }
+}
+
+triangulo(7, 5, 4)
