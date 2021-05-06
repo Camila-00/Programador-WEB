@@ -2,6 +2,29 @@
 
 // Obs.: O primeiro jogo não conta como novo recorde do melhor.Exemplo:String: “10 20 20 8 25 3 0 30 1”Retorno: [3, 7] (Significa que ele bateu três vezes seu recorde de melhor pontuação e a pior pontuaçãoaconteceu no sétimo jogo.)
 
+let pontuacao = "30, 40, 20, 4, 51, 25, 42, 38, 56, 0"
+
+function escalada(pontuacao) {
+    let pontuacoes = pontuacao.split(", ")
+    let recordes = 0
+    let piorJogo = 1 //Começa a partir do 2º jogo!!!
+    let maiorPonto = pontuacoes[0]
+    let menorPonto = pontuacoes[0]
+
+    for(let i=1; i<pontuacoes.length; i++) {
+        if(pontuacoes[i] > maiorPonto) {
+            maiorPonto = pontuacoes[i]
+            recordes++
+        } else if(pontuacoes[i] < menorPonto) {
+            menorPonto = pontuacoes[i]
+            piorJogo = i+1
+        }
+    }
+    return[recordes, piorJogo]
+}
+
+console.log(escalada(pontuacao))
+
 
 
 
