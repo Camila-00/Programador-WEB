@@ -8,5 +8,8 @@ function Pessoa(nome, idade) {
 }
 
 const p1 = new Pessoa('João', 26)
+const p2 = new Pessoa('Camila', 34)
 p1.falar()
+p2.falar()
+
 
