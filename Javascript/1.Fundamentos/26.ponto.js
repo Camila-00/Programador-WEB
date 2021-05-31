@@ -15,6 +15,10 @@ function Obj(nome)
 }
 const obj2 = new Obj('Cadeira')
 const obj3 = new Obj('Mesa')
+
 console.log(obj2.nome)
 console.log(obj3.nome)
 obj3.exec()
+
+//A notação "ponto" serve tanto para atributos quanto para funções!!
+// https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Objects/Basics#nota%C3%A7%C3%A3o_de_ponto
