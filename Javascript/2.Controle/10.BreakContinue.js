@@ -14,7 +14,7 @@ for(y in nums) {
     console.log(`${y} = ${nums[y]}`)
 }
 
-externo: for(a in nums) {  //não use! Só efeito didático!!
+externo: for(a in nums) {  //não use! Só efeito didático!! for rotulado
     for(b in nums) {
         if(a==2 && b==3) break externo
         console.log(`Par = ${a}, ${b}`)
