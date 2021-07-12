@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Arthur Oliveira Gomes",
+      "email": "aoliveira@cod3r.com.br"
+    },
+    {
+      "name": "Ana Silva",
+      "email": "anasilva@negocio.com.br",
+      "id": 3
+    },
+    {
+      "name": "Camila Isabela",
+      "email": "camila_isabela_lins@hotmail.com",
+      "id": 4
+    }
+  ]
+}
